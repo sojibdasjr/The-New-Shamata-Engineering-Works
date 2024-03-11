@@ -1,0 +1,12 @@
+.gradient-border {
+  border-inline-end: 4px solid;
+  border-block-end: 4px solid;
+  border-image-source: radial-gradient(
+    circle at bottom right,
+    purple,
+    transparent 35%
+  );
+
+  border-image-slice: 1;
+  padding: 10px;
+}

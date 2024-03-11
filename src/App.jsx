@@ -1,9 +1,11 @@
 import "./App.css";
-import SecondaryNavbar from "./components/SecondaryNavbar/SecondaryNavbar";
+import FirstNavbar from "./components/Navbar/FirstNavbar";
+import SecondaryNavbar from "./components/Navbar/SecondaryNavbar";
 
 function App() {
   return (
     <>
+      <FirstNavbar />
       <SecondaryNavbar />
     </>
   );
