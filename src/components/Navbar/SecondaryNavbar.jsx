@@ -7,8 +7,8 @@ import "./Navbar.css";
 const SecondaryNavbar = () => {
   return (
     <div className="bg-slate-100">
-      <div className="max-w-7xl mx-auto">
-        <div className=" py-5 text-black flex justify-between mx-2">
+      <div className="lg:max-w-7xl lg:mx-auto">
+        <div className=" py-5 text-black flex justify-between mx-4">
           {/* log and company name */}
           <div className="flex items-center gap-2">
             <img className="w-10 md:w-14" src={logo} alt="" />

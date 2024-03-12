@@ -5,11 +5,27 @@ import { FaXmark, FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   // set toggleMenu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  useEffect(() => {
+    const handleSticky = () => {
+      if (window.scrollY > 25) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleSticky);
+
+    return () => {
+      window.addEventListener("scroll", handleSticky);
+    };
+  });
 
   // navbar item
   const navItems = [
@@ -20,8 +36,14 @@ const Navbar = () => {
     { page: "Contact", path: "/contact" },
   ];
   return (
-    <header className="w-full bg-barandBgSky400 text-black  top-0 left-0 right-0 ">
-      <nav className=" py-4 lg:px-14 px-4">
+    <header className="w-full duration-300 bg-barandBgSky400 text-white   fixed mt-[134px] top-0 left-0 right-0 ">
+      <nav
+        className={`py-4 lg:px-14 px-4  ${
+          isSticky
+            ? "static  -mt-[136px] top-0 left-0 right-0 border-b bg-barandBgSky400 bg-opacity-30  backdrop-filter backdrop-blur-md text-black  duration-300"
+            : ""
+        }`}
+      >
         <div className="flex justify-start md:justify-center items-center font-semibold  gap-8">
           {/* Nav items for large devices  */}
           <ul className="md:flex space-x-12 hidden">

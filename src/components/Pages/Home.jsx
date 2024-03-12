@@ -1,13 +1,25 @@
 import React from "react";
 import Slider from "../HomePageComponents/Slider";
 import AboutCompany from "../HomePageComponents/AboutCompany";
+import AboutFounder from "../HomePageComponents/AboutFounder";
+import CompaniesProfile from "../HomePageComponents/CompaniesProfile";
+import ProjectWork from "../HomePageComponents/ProjectWork";
 
 const Home = () => {
   return (
     <div>
       <Slider />
-      <div className="bg-white">
+      <div className="bg-white pb-16">
         <AboutCompany />
+      </div>
+      <div className="bg-slate-300 ">
+        <AboutFounder />
+      </div>
+      <div className="bg-white ">
+        <CompaniesProfile />
+      </div>
+      <div className="bg-barandBgSky400 ">
+        <ProjectWork />
       </div>
     </div>
   );

@@ -1,9 +1,13 @@
 import React from "react";
 
+import AboutFounder from "../HomePageComponents/AboutFounder";
+
 const AboutUs = () => {
   return (
-    <div>
-      <h1>About us</h1>
+    <div className="pt-6">
+      <div className="bg-slate-300 ">
+        <AboutFounder />
+      </div>
     </div>
   );
 };

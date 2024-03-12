@@ -15,27 +15,33 @@ const Slider = () => {
           >
             <div className="hero-content">
               <div className="max-w-md md:max-w-full md:mx-32 ">
-                <h1 className="mb-5 text-5xl text-textColorSky500 font-bold">
-                  LOS GATOS TREEHOUSE
-                </h1>
-                <p className="mb-5 border  backdrop-blur-sm   py-5 px-2 text-black ">
-                  Cathie Hong had been an interior designer for years. So when
-                  the mom of four kids embarked on renovating her own family’s
-                  new home—a moody, redwood-clad, midcentury residence tucked
-                  behind trees in Los Gatos, California—she thought she had it
-                  on lock. But the process proved to be a surprising one: “The
-                  whole experience of renovating my house was eye-opening for
-                  me. I thought going into it that I would know exactly what to
-                  do because I’m always working with my clients on their
-                  renovation projects,” Hong explains. “It was very different
-                  being the homeowner!”
-                </p>
-                <Link
-                  to="/service"
-                  className="py-2 px-4  border rounded-full  backdrop-blur-sm    text-textColorSky500 "
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
-                  Service
-                </Link>
+                  <h1 className="mb-5 text-5xl text-textColorSky500 font-bold">
+                    LOS GATOS TREEHOUSE
+                  </h1>
+                  <p className="mb-5 border  backdrop-blur-sm   py-5 px-2 text-black ">
+                    Cathie Hong had been an interior designer for years. So when
+                    the mom of four kids embarked on renovating her own family’s
+                    new home—a moody, redwood-clad, midcentury residence tucked
+                    behind trees in Los Gatos, California—she thought she had it
+                    on lock. But the process proved to be a surprising one: “The
+                    whole experience of renovating my house was eye-opening for
+                    me. I thought going into it that I would know exactly what
+                    to do because I’m always working with my clients on their
+                    renovation projects,” Hong explains. “It was very different
+                    being the homeowner!”
+                  </p>
+                  <Link
+                    to="/service"
+                    className="py-2 px-4  border rounded-full  backdrop-blur-sm    text-textColorSky500 "
+                  >
+                    Service
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -60,23 +66,30 @@ const Slider = () => {
           >
             <div className="hero-content">
               <div className="max-w-md md:max-w-full md:mx-32 ">
-                <h1 className="mb-5 text-5xl text-textColorSky500 font-bold">
-                  FULL SERVICE DESIGN
-                </h1>
-                <p className="mb-5 border  backdrop-blur-sm  bg-opacity-5 py-5 px-2 text-black ">
-                  Our preference as designers is to be brought on to the project
-                  as early in the process as possible. We love collaborating
-                  with architects, structural engineers, and builders to help
-                  you create the vision you have for your home. Whether your
-                  project is a new build, gut renovation, furnishing, or
-                  somewhere in between, full-service design includes:
-                </p>
-                <Link
-                  to="/service"
-                  className="py-2 px-4  border rounded-full  backdrop-blur-md   text-textColorSky500 "
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
-                  Service
-                </Link>
+                  <h1 className="mb-5 text-5xl text-textColorSky500 font-bold">
+                    FULL SERVICE DESIGN
+                  </h1>
+                  <p className="mb-5 border  backdrop-blur-sm  bg-opacity-5 py-5 px-2 text-black ">
+                    Our preference as designers is to be brought on to the
+                    project as early in the process as possible. We love
+                    collaborating with architects, structural engineers, and
+                    builders to help you create the vision you have for your
+                    home. Whether your project is a new build, gut renovation,
+                    furnishing, or somewhere in between, full-service design
+                    includes:
+                  </p>
+                  <Link
+                    to="/service"
+                    className="py-2 px-4  border rounded-full  backdrop-blur-md   text-textColorSky500 "
+                  >
+                    Service
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
