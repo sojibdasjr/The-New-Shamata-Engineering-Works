@@ -1,24 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
 //React icon
 import { FaXmark, FaBars } from "react-icons/fa6";
-
-//Note
-// ...............................................................
-// if you copy the navbar for your project you must install
-// 1. react router dom
-// 2. tailwild
-//3 .react-icons
-//4. react-scroll
-
-// also add in index.css or App.css
-// header {
-//     z-index: 10001 !important;
-//   }
-
-// use main div mt-16 for mobile device
-// ...............................................................
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +20,7 @@ const Navbar = () => {
     { page: "Contact", path: "/contact" },
   ];
   return (
-    <header className="w-full bg-purple-400 text-white  top-0 left-0 right-0 ">
+    <header className="w-full bg-barandBgSky400 text-black  top-0 left-0 right-0 ">
       <nav className=" py-4 lg:px-14 px-4">
         <div className="flex justify-start md:justify-center items-center font-semibold  gap-8">
           {/* Nav items for large devices  */}

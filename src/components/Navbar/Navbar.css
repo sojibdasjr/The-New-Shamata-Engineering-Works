@@ -3,7 +3,7 @@
   border-block-end: 4px solid;
   border-image-source: radial-gradient(
     circle at bottom right,
-    purple,
+    rgb(14 165 233),
     transparent 35%
   );
 
