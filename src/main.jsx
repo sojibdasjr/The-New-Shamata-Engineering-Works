@@ -7,12 +7,17 @@ import AboutUs from "./components/Pages/AboutUs.jsx";
 import Service from "./components/Pages/Service.jsx";
 import ImageGallery from "./components/Pages/ImageGallery.jsx";
 import Contact from "./components/Pages/Contact.jsx";
+import Home from "./components/Pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/about",
         element: <AboutUs />,
