@@ -4,6 +4,7 @@ import AboutCompany from "../HomePageComponents/AboutCompany";
 import AboutFounder from "../HomePageComponents/AboutFounder";
 import CompaniesProfile from "../HomePageComponents/CompaniesProfile";
 import ProjectWork from "../HomePageComponents/ProjectWork";
+import BoardDirectors from "../HomePageComponents/BoardDirectors";
 
 const Home = () => {
   return (
@@ -20,6 +21,9 @@ const Home = () => {
       </div>
       <div className="bg-barandBgSky400 ">
         <ProjectWork />
+      </div>
+      <div className="bg-white pt-16">
+        <BoardDirectors />
       </div>
     </div>
   );

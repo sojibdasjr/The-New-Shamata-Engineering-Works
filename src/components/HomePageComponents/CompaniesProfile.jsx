@@ -6,7 +6,7 @@ const CompaniesProfile = () => {
     <div className="lg:max-w-7xl lg:mx-auto pb-16 mx-2">
       <div>
         <div className="text-black text-center">
-          <h1 className="text-2xl pt-10">Companies Profile</h1>
+          <h1 className="text-3xl font-bold pt-10 ">Own Design</h1>
           <p className="py-5">
             We are here to provide design consulting, furniture and styling, and
             full-service renovation and design services. We are located in the
