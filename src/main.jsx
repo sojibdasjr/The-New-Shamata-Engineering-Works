@@ -4,10 +4,11 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutUs from "./components/Pages/AboutUs.jsx";
-import Service from "./components/Pages/Service.jsx";
+
 import ImageGallery from "./components/Pages/ImageGallery.jsx";
 import Contact from "./components/Pages/Contact.jsx";
 import Home from "./components/Pages/Home.jsx";
+import Portfolio from "./components/Pages/Portfolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,9 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/service",
-        element: <Service />,
+        path: "/portfolio",
+        loader: () => fetch("fakeData.json"),
+        element: <Portfolio />,
       },
       {
         path: "/gallery",

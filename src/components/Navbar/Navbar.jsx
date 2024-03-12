@@ -29,11 +29,11 @@ const Navbar = () => {
 
   // navbar item
   const navItems = [
-    { page: "Home", path: "/" },
-    { page: "About Us", path: "/about" },
-    { page: "Service", path: "/service" },
-    { page: "Image Gallery", path: "/gallery" },
-    { page: "Contact", path: "/contact" },
+    { page: "HOME", path: "/" },
+    { page: "ABOUT US", path: "/about" },
+    { page: "PORTFOLIO", path: "/portfolio" },
+    { page: "IMAGE GALLERY", path: "/gallery" },
+    { page: "CONTACT", path: "/contact" },
   ];
   return (
     <header className="w-full duration-300 bg-barandBgSky400 text-white   fixed mt-[134px] top-0 left-0 right-0 ">
@@ -44,13 +44,13 @@ const Navbar = () => {
             : ""
         }`}
       >
-        <div className="flex justify-start md:justify-center items-center font-semibold  gap-8">
+        <div className="flex justify-start md:justify-center items-center tracking-widest   gap-8">
           {/* Nav items for large devices  */}
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="md:flex space-x-12 hidden ">
             {navItems.map(({ page, path }) => (
               <li
                 key={path}
-                className="  rounded block text-grey900 hover:text-brandPrimary "
+                className="  rounded block  hover:text-brandPrimary  "
               >
                 <NavLink
                   className={({ isActive, isPending }) =>
@@ -88,7 +88,7 @@ const Navbar = () => {
           {navItems.map(({ page, path }) => (
             <li
               key={path}
-              className="  rounded block text-black hover:text-red-500  hover:translate-x-2  duration-300 "
+              className="  rounded block text-black hover:text-red-500  hover:translate-x-2  duration-300 tracking-widest "
             >
               <NavLink
                 className={({ isActive, isPending }) =>
