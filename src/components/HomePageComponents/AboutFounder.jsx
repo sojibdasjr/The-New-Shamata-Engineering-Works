@@ -18,15 +18,17 @@ const AboutFounder = () => {
           </div>
         </div>
 
-        <div className="text-black lg:w-1/2 md:w-full">
+        <div className="text-yellow-400 lg:w-1/2 md:w-full">
           <div
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
             data-aos-duration="500"
           >
-            <h1 className="text-4xl font-semibold">CATHIE HONG</h1>
-            <h1 className="font-semibold underline underline-offset-4">
+            <h1 className="text-4xl font-semibold text-textColorSky500">
+              CATHIE HONG
+            </h1>
+            <h1 className="font-semibold underline underline-offset-4 text-white">
               PRINCIPAL DESIGNER
             </h1>
             <p>

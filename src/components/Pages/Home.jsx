@@ -13,7 +13,7 @@ const Home = () => {
       <div className="bg-white pb-16">
         <AboutCompany />
       </div>
-      <div className="bg-slate-300 ">
+      <div className="bg-black ">
         <AboutFounder />
       </div>
       <div className="bg-white ">
