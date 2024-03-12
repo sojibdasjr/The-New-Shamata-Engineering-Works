@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/portfolio",
-        loader: () => fetch("fakeData.json"),
+        loader: () => fetch("../fakeData.json"),
         element: <Portfolio />,
       },
       {

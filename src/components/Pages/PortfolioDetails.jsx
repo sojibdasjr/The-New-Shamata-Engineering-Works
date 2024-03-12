@@ -5,6 +5,7 @@ import { AiFillLike } from "react-icons/ai";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactCompareImage from "react-compare-image";
 
 const PortfolioDetails = () => {
   const [isLike, setIsLike] = useState(false);
@@ -14,7 +15,8 @@ const PortfolioDetails = () => {
   const newId = parseInt(id);
   const newItem = loadAllData.find((item) => item.id === newId);
 
-  const { title, banner, image1, image2, image4, description } = newItem;
+  const { title, banner, banner2, image1, image2, image4, description } =
+    newItem;
 
   const handleLike = () => {
     setIsLike(true);
@@ -51,9 +53,9 @@ const PortfolioDetails = () => {
             </Link>
           )}
         </div>
-
         {/* image section  */}
-        <img data-aos="zoom-in-down" className="w-full" src={banner} alt="" />
+        <ReactCompareImage leftImage={banner} rightImage={banner2} />
+        {/* <img data-aos="zoom-in-down" className="w-full" src={banner} alt="" /> */}
         <div className="md:flex gap-4 pt-5 md:pe-8">
           <img
             data-aos="fade-right"

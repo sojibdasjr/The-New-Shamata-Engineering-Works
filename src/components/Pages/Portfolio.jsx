@@ -9,8 +9,8 @@ const Portfolio = () => {
     <div className="bg-white text-black">
       <div className="lg:max-w-7xl lg:mx-auto mx-4  py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {ourPortfolios.map((item) => (
-            <PortfolioCard key={item.id} portfolio={item}></PortfolioCard>
+          {ourPortfolios.map((item, index) => (
+            <PortfolioCard key={index} portfolio={item}></PortfolioCard>
           ))}
         </div>
       </div>
