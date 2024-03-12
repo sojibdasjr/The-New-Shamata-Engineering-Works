@@ -31,14 +31,15 @@ const Navbar = () => {
   // navbar item
   const navItems = [
     { page: "Home", path: "/" },
-    { page: "Contact", path: "/contact" },
-    { page: "About", path: "/about" },
+    { page: "About Us", path: "/about" },
     { page: "Service", path: "/service" },
+    { page: "Image Gallery", path: "/gallery" },
+    { page: "Contact", path: "/contact" },
   ];
   return (
-    <header className="w-full bg-slate-300  top-0 left-0 right-0 ">
+    <header className="w-full bg-purple-400 text-white  top-0 left-0 right-0 ">
       <nav className=" py-4 lg:px-14 px-4">
-        <div className="flex justify-center items-center text-black gap-8">
+        <div className="flex justify-start md:justify-center items-center font-semibold  gap-8">
           {/* Nav items for large devices  */}
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ page, path }) => (
@@ -59,7 +60,7 @@ const Navbar = () => {
           </ul>
 
           {/* menu btn for only mobile device */}
-          <div className="md:hidden ">
+          <div className="md:hidden">
             <button
               onClick={toggleMenu}
               className="text-black focus:outline-none  focus:text-gray-500"

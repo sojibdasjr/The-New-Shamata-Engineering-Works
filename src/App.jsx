@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import FirstNavbar from "./components/Navbar/FirstNavbar";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,6 +10,7 @@ function App() {
       <FirstNavbar />
       <SecondaryNavbar />
       <Navbar />
+      <Outlet />
     </>
   );
 }
