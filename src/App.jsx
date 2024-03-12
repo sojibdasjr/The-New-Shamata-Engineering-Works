@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
+import GoToUp from "./components/GotoUp/GoToUp";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <SecondaryNavbar />
       <Navbar />
       <Outlet />
+      <GoToUp />
       <div className="bg-sky-200">
         <Footer />
       </div>
