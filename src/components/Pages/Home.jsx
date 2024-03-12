@@ -3,61 +3,88 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <div className="carousel w-full ">
-        <div id="item1" className="carousel-item w-full ">
-          <div
-            className="hero min-h-screen"
-            style={{
-              backgroundImage:
-                "url(https://i.ibb.co/W02WsF3/Cathie-Hong-Home-14.jpg)",
-            }}
-          >
-            <div className="hero-content text-center backdrop-blur-md  bg-opacity-5  text-black bg-purple-200 ">
-              <div className="max-w-md ">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
-                </p>
-                <button className="py-2 px-4 rounded bg-purple-400 text-white">
-                  Service
-                </button>
+      <div className="carousel w-full">
+        <div id="slide1" className="carousel-item relative w-full">
+          <div id="item1" className="carousel-item w-full ">
+            <div
+              className="hero min-h-screen "
+              style={{
+                backgroundImage:
+                  "url(https://i.ibb.co/W02WsF3/Cathie-Hong-Home-14.jpg)",
+              }}
+            >
+              <div className="hero-content">
+                <div className="max-w-md md:max-w-full md:mx-32 ">
+                  <h1 className="mb-5 text-5xl text-white font-bold">
+                    LOS GATOS TREEHOUSE
+                  </h1>
+                  <p className="mb-5 border  backdrop-blur-sm  bg-opacity-5 py-5 px-2 text-black ">
+                    Cathie Hong had been an interior designer for years. So when
+                    the mom of four kids embarked on renovating her own family’s
+                    new home—a moody, redwood-clad, midcentury residence tucked
+                    behind trees in Los Gatos, California—she thought she had it
+                    on lock. But the process proved to be a surprising one: “The
+                    whole experience of renovating my house was eye-opening for
+                    me. I thought going into it that I would know exactly what
+                    to do because I’m always working with my clients on their
+                    renovation projects,” Hong explains. “It was very different
+                    being the homeowner!”
+                  </p>
+                  <button className="py-2 px-4  border rounded  backdrop-blur-md  bg-opacity-85  text-black ">
+                    Service
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" className="text-4xl text-purple-800">
+              ❮
+            </a>
+            <a href="#slide2" className="text-4xl text-purple-800">
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item2" className="carousel-item w-full">
-          <div
-            className="hero min-h-screen"
-            style={{
-              backgroundImage:
-                "url(https://i.ibb.co/1607xHJ/Cathie-Hong-Emory-122.jpg)",
-            }}
-          >
-            <div className="hero-content text-center  backdrop-blur-md  bg-opacity-5  text-black bg-purple-200">
-              <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                <p className="mb-5">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                  assumenda excepturi exercitationem quasi. In deleniti eaque
-                  aut repudiandae et a id nisi.
-                </p>
-                <button className="py-2 px-4 rounded bg-purple-400 text-white">
-                  Service
-                </button>
+        <div id="slide2" className="carousel-item relative w-full">
+          <div id="item2" className="carousel-item w-full">
+            <div
+              className="hero min-h-screen"
+              style={{
+                backgroundImage:
+                  "url(https://i.ibb.co/1607xHJ/Cathie-Hong-Emory-122.jpg)",
+              }}
+            >
+              <div className="hero-content">
+                <div className="max-w-md md:max-w-full md:mx-32 ">
+                  <h1 className="mb-5 text-5xl text-white font-bold">
+                    FULL SERVICE DESIGN
+                  </h1>
+                  <p className="mb-5 border  backdrop-blur-sm  bg-opacity-5 py-5 px-2 text-black ">
+                    Our preference as designers is to be brought on to the
+                    project as early in the process as possible. We love
+                    collaborating with architects, structural engineers, and
+                    builders to help you create the vision you have for your
+                    home. Whether your project is a new build, gut renovation,
+                    furnishing, or somewhere in between, full-service design
+                    includes:
+                  </p>
+                  <button className="py-2 px-4  border rounded  backdrop-blur-md  bg-opacity-85  text-black ">
+                    Service
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="  text-4xl text-purple-800">
+              ❮
+            </a>
+            <a href="#slide3" className="  text-4xl text-purple-800">
+              ❯
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center w-full bg-slate-200 py-2 gap-2">
-        <a href="#item1" className="btn btn-xs">
-          1
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          2
-        </a>
       </div>
     </div>
   );
