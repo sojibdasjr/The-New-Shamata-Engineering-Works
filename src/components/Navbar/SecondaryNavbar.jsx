@@ -26,7 +26,7 @@ const SecondaryNavbar = () => {
                 <p className="font-semibold">Hot Line: +8801628078487</p>
               </div>
             </div>
-            <div className="hidden md:flex  items-center gap-2">
+            <div className="hidden lg:flex  items-center gap-2">
               <SiMinutemailer className=" text-4xl text-textColorSky500 border border-slate-300 rounded-full p-1 " />
               <div>
                 <small>Email us </small>
