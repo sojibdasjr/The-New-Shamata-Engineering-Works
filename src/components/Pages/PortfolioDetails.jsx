@@ -57,27 +57,25 @@ const PortfolioDetails = () => {
         <ReactCompareImage leftImage={banner} rightImage={banner2} />
         {/* <img data-aos="zoom-in-down" className="w-full" src={banner} alt="" /> */}
         <div className="md:flex gap-4 pt-5 md:pe-8">
-          <img
-            data-aos="fade-right"
-            className="md:w-1/3 pt-1"
-            src={image1}
-            alt=""
-          />
+          <img className="md:w-1/3 pt-1" src={image1} alt="" />
 
-          <img
-            data-aos="fade-down"
-            className="md:w-1/3 pt-1"
-            src={image2}
-            alt=""
-          />
+          <img className="md:w-1/3 pt-1" src={image2} alt="" />
 
-          <img
-            data-aos="fade-left"
-            className="md:w-1/3 pt-1"
-            src={image4}
-            alt=""
-          />
+          <img className="md:w-1/3 pt-1" src={image4} alt="" />
         </div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition:Bounce
+        />
         <div className="pt-10">
           <h1 className="underline underline-offset-4 text-textColorSky500 tracking-widest pb-2">
             About Design
@@ -85,19 +83,6 @@ const PortfolioDetails = () => {
           <p className="tracking-wide ps-2">{description}</p>
         </div>
       </div>
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition:Bounce
-      />
     </div>
   );
 };

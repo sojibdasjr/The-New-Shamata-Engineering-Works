@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <Outlet />
       <GoToUp />
-      <div className="bg-sky-200 pb-16">
+      <div className="bg-sky-200">
         <Footer />
       </div>
     </>
