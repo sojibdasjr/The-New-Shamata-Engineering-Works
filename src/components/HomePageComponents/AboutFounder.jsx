@@ -13,7 +13,7 @@ const AboutFounder = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           className="text-yellow-400 lg:w-1/2 md:w-full"
         >
           <h1 className="text-4xl font-semibold text-textColorSky500">
