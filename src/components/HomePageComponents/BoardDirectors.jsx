@@ -17,7 +17,10 @@ const BoardDirectors = () => {
       </h1>
       <div className="lg:max-w-7xl lg:mx-auto mx-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4">
-          <div className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   ">
+          <div
+            data-aos="zoom-out-right"
+            className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   "
+          >
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">
@@ -39,7 +42,10 @@ const BoardDirectors = () => {
               </div>
             </div>
           </div>
-          <div className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   ">
+          <div
+            data-aos="zoom-out-down"
+            className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   "
+          >
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">
@@ -61,7 +67,10 @@ const BoardDirectors = () => {
               </div>
             </div>
           </div>
-          <div className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   ">
+          <div
+            data-aos="zoom-out-up"
+            className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   "
+          >
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">
@@ -83,7 +92,10 @@ const BoardDirectors = () => {
               </div>
             </div>
           </div>
-          <div className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   ">
+          <div
+            data-aos="zoom-out"
+            className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   "
+          >
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">

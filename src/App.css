@@ -2,5 +2,6 @@ header {
   z-index: 10001 !important;
 }
 .active {
-  color: rgb(68 64 60);
+  color: rgb(0, 32, 216);
+  font-weight: 600;
 }
