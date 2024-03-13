@@ -10,7 +10,6 @@ import lgZoom from "lightgallery/plugins/zoom";
 
 const AboutHero = () => {
   if (lgZoom === true) {
-    console.log("Ok");
   }
   return (
     <div className="lg:max-w-7xl lg:mx-auto mx-4  py-16">

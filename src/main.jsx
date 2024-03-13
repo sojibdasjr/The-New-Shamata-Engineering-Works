@@ -10,6 +10,8 @@ import Contact from "./components/Pages/Contact.jsx";
 import Home from "./components/Pages/Home.jsx";
 import Portfolio from "./components/Pages/Portfolio.jsx";
 import PortfolioDetails from "./components/Pages/PortfolioDetails.jsx";
+import ChosseDesing from "./components/Pages/ChosseDesing.jsx";
+import DetailChosse from "./components/Pages/DetailChosse.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +20,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-
         element: <Home />,
       },
       {
         path: "/about",
         element: <AboutUs />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "/portfolio",
@@ -40,8 +45,14 @@ const router = createBrowserRouter([
         element: <ImageGallery />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/detailChosse/:id",
+        loader: () => fetch("../fakeData.json"),
+        element: <DetailChosse />,
+      },
+      {
+        path: "/chosse",
+        loader: () => fetch("../fakeData.json"),
+        element: <ChosseDesing />,
       },
     ],
   },

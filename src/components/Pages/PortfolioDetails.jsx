@@ -6,6 +6,10 @@ import { AiFillLike } from "react-icons/ai";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactCompareImage from "react-compare-image";
+import {
+  getDesignFromLS,
+  saveDesingToLC,
+} from "../../../public/Utilitys/localStroage";
 
 const PortfolioDetails = () => {
   const [isLike, setIsLike] = useState(false);
@@ -19,8 +23,15 @@ const PortfolioDetails = () => {
     newItem;
 
   const handleLike = () => {
+    const likeDesing = getDesignFromLS();
     setIsLike(true);
-    toast.success("🦄 Chooss Successfully", {});
+
+    if (likeDesing.includes(newId)) {
+      toast.error(" 🥵 You have already Like This Design", {});
+    } else {
+      saveDesingToLC(newId);
+      toast.success("💚 Choose Successfully", {});
+    }
   };
 
   return (
@@ -39,8 +50,8 @@ const PortfolioDetails = () => {
             Photography: Margaret Austin Photo
           </p>
         </div>
-        <div
-          className="mb-5 text-5xl text-textColorSky500"
+        <button
+          className="mb-5 text-5xl text-textColorSky500 "
           onClick={handleLike}
         >
           {isLike ? (
@@ -52,7 +63,7 @@ const PortfolioDetails = () => {
               <BiLike />
             </Link>
           )}
-        </div>
+        </button>
         {/* image section  */}
         <ReactCompareImage leftImage={banner} rightImage={banner2} />
         {/* <img data-aos="zoom-in-down" className="w-full" src={banner} alt="" /> */}

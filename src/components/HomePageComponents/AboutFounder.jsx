@@ -12,7 +12,7 @@ const AboutFounder = () => {
           />
         </div>
 
-        <div data-aos="zoom-out" className="text-yellow-400 lg:w-1/2 md:w-full">
+        <div data-aos="fade-up" className="text-yellow-400 lg:w-1/2 md:w-full">
           <h1 className="text-4xl font-semibold text-textColorSky500">
             CATHIE HONG
           </h1>

@@ -34,6 +34,7 @@ const Navbar = () => {
     { page: "DESIGNS", path: "/portfolio" },
     { page: "IMAGE GALLERY", path: "/gallery" },
     { page: "CONTACT", path: "/contact" },
+    { page: "CHOOSED-DESIGN", path: "/chosse" },
   ];
   return (
     <header className="w-full duration-300 bg-barandBgSky400 text-white  fixed mt-[134px] top-0 left-0 right-0 ">
