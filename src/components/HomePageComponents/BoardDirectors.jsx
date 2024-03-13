@@ -16,17 +16,20 @@ const BoardDirectors = () => {
         Board Of Corporate Directors
       </h1>
       <div className="lg:max-w-7xl lg:mx-auto mx-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4">
+        <div
+          data-aos="fade-down"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4"
+        >
           <div className="border rounded-md py-5  backdrop-blur-sm bg-blue-400 bg-opacity-15   ">
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">
-                  <img src="https://static1.squarespace.com/static/5af4da35a2772cc078f7e05b/60df488dd265c20054e76732/60df488de63d186be345059c/1625245859624/001_+Tara_LYCP0001_1.jpg?format=1500w" />
+                  <img src="https://i.ibb.co/pRg0874/crop-photo.jpg" />
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-semibold">Rubbi</h1>
-                <h1 className="font-semibold">Corporate Director</h1>
+                <h1 className="text-2xl font-semibold">Pinky Banik</h1>
+                <h1 className="font-semibold">Web-Developer</h1>
                 <h1 className="text-textColorSky500">
                   Shamata Engineering Works
                 </h1>
@@ -65,12 +68,12 @@ const BoardDirectors = () => {
             <div className="text-center text-black">
               <div className="avatar">
                 <div className="w-40 rounded-full ring ring-barandBgSky400 ring-offset-base-100 ring-offset-2">
-                  <img src="https://amelieclements.com/wp-content/uploads/2022/02/business-portrait-woman-photographer-zurich-professional-headshot-amelie-clements-corporate-photoshoot-portfolio-apercu.jpg" />
+                  <img src="https://scontent.fcla7-1.fna.fbcdn.net/v/t39.30808-6/387042139_2562162160626616_4404759369212515955_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=g4D-Ao1FSL8AX-21xUm&_nc_ht=scontent.fcla7-1.fna&oh=00_AfA3ReGIU1nl0Sy3JtwqxaPi2lErY7mQqNgBOqapBhpL2A&oe=65F60FFC" />
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-semibold">Mareila</h1>
-                <h1 className="font-semibold">Corporate Director</h1>
+                <h1 className="text-2xl font-semibold">SOJIB DAS</h1>
+                <h1 className="font-semibold">WEB-Developer</h1>
                 <h1 className="text-textColorSky500">
                   Shamata Engineering Works
                 </h1>
