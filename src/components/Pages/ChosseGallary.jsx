@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ChosseGallary = ({ display }) => {
-  const { id, title, banner, image1, description } = display;
+  const { id, title, banner, description } = display;
   return (
     <div className=" py-2 relative  rounded-lg gap-4 md:items-center lg:items-start mb-[270px]  md:mb-[200px] ">
       <div className="overflow-hidden cursor-pointer">
@@ -24,7 +24,7 @@ const ChosseGallary = ({ display }) => {
               to={`/detailChosse/${id}`}
               className="text-center text-black "
             >
-              <h1 className=" hover:translate-x-3 duration-500 hover:text-textColorSky500  flex items-center">
+              <h1 className=" hover:translate-x-6 duration-500 hover:text-textColorSky500  flex items-center">
                 {" "}
                 Read More <MdOutlineKeyboardArrowRight className="text-2xl" />
               </h1>

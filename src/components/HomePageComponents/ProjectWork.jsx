@@ -18,7 +18,7 @@ const ProjectWork = () => {
           </p>
         </div>
 
-        <div data-aos="fade-right" className=" lg:w-1/2 md:w-full ">
+        <div data-aos="fade-up" className=" lg:w-1/2 md:w-full ">
           <img
             src="https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/dd293a6f-c686-4f54-b15c-1b093a41e18c/CathieHong_Smith_1.jpg?format=2500w"
             alt=""

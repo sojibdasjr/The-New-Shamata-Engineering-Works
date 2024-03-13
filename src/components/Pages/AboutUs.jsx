@@ -6,7 +6,7 @@ import AboutTeam from "../HomePageComponents/AboutTeam";
 
 const AboutUs = () => {
   return (
-    <div className="pt-6">
+    <div>
       <div className="bg-white">
         <AboutHero />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import LightGallery from "lightgallery/react";
-
+import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
@@ -9,10 +10,21 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgZoom from "lightgallery/plugins/zoom";
 
 const AboutHero = () => {
+  const navigate = useNavigate();
   if (lgZoom === true) {
   }
   return (
     <div className="lg:max-w-7xl lg:mx-auto mx-4  py-16">
+      <button
+        type="button"
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        <h1 className="text-2xl text-red-400 border px-5 rounded">
+          <MdOutlineSubdirectoryArrowLeft />
+        </h1>
+      </button>
       <LightGallery
         speed={500}
         plugins={[lgZoom]}
