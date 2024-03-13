@@ -40,7 +40,7 @@ const Navbar = () => {
       <nav
         className={`py-4 lg:px-14 px-4  ${
           isSticky
-            ? "static  -mt-[136px] block top-0 left-0 right-0 border-b bg-barandBgSky400 bg-opacity-30  backdrop-filter backdrop-blur-md text-black  duration-300"
+            ? "static  -mt-[136px]  top-0 left-0 right-0 border-b bg-barandBgSky400 bg-opacity-30  backdrop-filter backdrop-blur-md text-black  duration-300"
             : ""
         }`}
       >
@@ -88,7 +88,7 @@ const Navbar = () => {
           {navItems.map(({ page, path }) => (
             <li
               key={path}
-              className="  rounded block text-black hover:text-red-500  hover:translate-x-2  duration-300 tracking-widest "
+              className="  rounded block text-black hover:text-red-500   hover:translate-x-2  duration-300 tracking-widest "
             >
               <NavLink
                 className={({ isActive, isPending }) =>
