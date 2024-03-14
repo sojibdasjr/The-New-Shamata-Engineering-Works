@@ -17,7 +17,11 @@ const ContactDetails = () => {
             alt=""
           />
         </div>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="grid md:grid-cols-2 gap-4"
+        >
           <div className="text-black bg-slate-100 text-center">
             <h1 className="uppercase text-2xl font-bold mt-5 mb-2 ">
               Contact us
