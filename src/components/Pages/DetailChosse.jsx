@@ -18,17 +18,16 @@ const DetailChosse = () => {
       <div
         className="hero h-80 "
         style={{
-          backgroundImage:
-            "url(https://www.jaquar.com/images/uploaded/Bedroom%20Lighting%20Ideas/Add-a-Pop-of-Colour-with-Lighting-.png)",
+          backgroundImage: "url(https://i.ibb.co/G2zrJ4V/cover-Bed.jpg)",
         }}
       >
-        <div className="hero-overlay bg-opacity-50"></div>
+        <div className="hero-overlay bg-opacity-65"></div>
 
         <div className="hero-content text-center">
-          <div className="max-w-md text-center ">
+          <div className="max-w-md text-center text-white ">
             <p>
               {" "}
-              <Link to="/" className="text-white">
+              <Link to="/" className="text-red-400">
                 Home
               </Link>{" "}
               /Space Planning
