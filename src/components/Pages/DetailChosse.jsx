@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
@@ -141,6 +142,20 @@ const DetailChosse = () => {
               <div className="md:flex mt-3 items-center gap-2">
                 <h1 className="text-gray-500 text-[14px]">{description}</h1>
                 <img className="md:w-60 rounded-lg" src={image4} alt="" />
+              </div>
+              <div className="flex items-center gap-5 mt-5 ">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/uwYUXMcfA7c?si=ebV6bEp-Bih2kIh5"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <h1 className="text-gray-500 text-[14px] w-1/4">
+                  {description.slice(0, 300)}
+                </h1>
               </div>
             </div>
           </div>

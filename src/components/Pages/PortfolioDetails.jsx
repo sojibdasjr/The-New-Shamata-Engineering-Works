@@ -45,8 +45,8 @@ const PortfolioDetails = () => {
             navigate(-1);
           }}
         >
-          <h1 className="flex items-center gap-3 text-red-400 border px-5 py-2 rounded">
-            GO BACK <MdOutlineSubdirectoryArrowLeft className="text-2xl" />
+          <h1 className="text-2xl text-red-400 border px-5 rounded">
+            <MdOutlineSubdirectoryArrowLeft />
           </h1>
         </button>
         <h1 className="tracking-widest text-textColorSky500 pb-5">{title} </h1>
