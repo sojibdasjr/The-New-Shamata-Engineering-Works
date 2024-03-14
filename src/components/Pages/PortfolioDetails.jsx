@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { BiLike } from "react-icons/bi";
 import { AiFillLike } from "react-icons/ai";
 
@@ -10,8 +10,10 @@ import {
   getDesignFromLS,
   saveDesingToLC,
 } from "../../../public/Utilitys/localStroage";
+import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
 
 const PortfolioDetails = () => {
+  const navigate = useNavigate();
   const [isLike, setIsLike] = useState(false);
   const loaderData = useLoaderData();
   const loadAllData = loaderData.items;
@@ -37,6 +39,16 @@ const PortfolioDetails = () => {
   return (
     <div className="bg-white text-black">
       <div className="lg:max-w-7xl lg:mx-auto mx-4  py-16">
+        <button
+          type="button"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          <h1 className="flex items-center gap-3 text-red-400 border px-5 py-2 rounded">
+            GO BACK <MdOutlineSubdirectoryArrowLeft className="text-2xl" />
+          </h1>
+        </button>
         <h1 className="tracking-widest text-textColorSky500 pb-5">{title} </h1>
         <div className="pb-10">
           <small className="font-bold">{title}</small>
