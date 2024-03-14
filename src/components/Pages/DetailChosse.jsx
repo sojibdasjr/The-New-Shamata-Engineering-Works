@@ -9,8 +9,7 @@ const DetailChosse = () => {
   const { id } = useParams();
   const newId = parseInt(id);
   const newItem = loadAllData.find((item) => item.id === newId);
-  const { title, banner, banner2, image1, image2, image4, description } =
-    newItem;
+  const { title, banner, image1, image2, image4, description } = newItem;
   const navigate = useNavigate();
 
   return (
@@ -24,15 +23,17 @@ const DetailChosse = () => {
       >
         <div className="hero-overlay bg-opacity-50"></div>
 
-        <div className="max-w-md text-center ">
-          <p>
-            {" "}
-            <Link to="/" className="text-white">
-              Home
-            </Link>{" "}
-            /Space Planning
-          </p>
-          <h1 className="mb-5 text-3xl font-bold">{title}</h1>
+        <div className="hero-content text-center">
+          <div className="max-w-md text-center ">
+            <p>
+              {" "}
+              <Link to="/" className="text-white">
+                Home
+              </Link>{" "}
+              /Space Planning
+            </p>
+            <h1 className="mb-5 text-3xl font-bold">{title}</h1>
+          </div>
         </div>
       </div>
 
@@ -112,14 +113,14 @@ const DetailChosse = () => {
             </div>
           </div>
 
-          <div data-aos="zoom-out-up" className="md:w-3/4">
+          <div className="md:w-3/4">
             <img className="w-full" src={banner} alt="" />
-            <h1 className="text-5xl my-5 font-semibold tracking-widest">
+            <h1 className="text-4xl my-5 font-semibold tracking-widest">
               {title}
             </h1>
             <h1 className="text-gray-500 text-[14px]">{description}</h1>
 
-            <div data-aos="zoom-out-up">
+            <div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5 overflow-hidden">
                 <img
                   className="hover:scale-110 duration-500 cursor-pointer"
@@ -132,14 +133,14 @@ const DetailChosse = () => {
                   alt=""
                 />
               </div>
-              <h1 className="text-5xl my-5 font-semibold tracking-widest">
+              <h1 className="text-4xl my-5 font-semibold tracking-widest">
                 {title}
               </h1>
               <h1 className="text-gray-500 text-[14px]">{description}</h1>
               <h1 className="text-gray-500 text-[14px]">{description}</h1>
-              <div className="flex mt-3 items-center gap-2">
+              <div className="md:flex mt-3 items-center gap-2">
                 <h1 className="text-gray-500 text-[14px]">{description}</h1>
-                <img className="w-60 rounded-lg" src={image4} alt="" />
+                <img className="md:w-60 rounded-lg" src={image4} alt="" />
               </div>
             </div>
           </div>
