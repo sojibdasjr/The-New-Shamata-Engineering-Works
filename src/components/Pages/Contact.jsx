@@ -1,9 +1,16 @@
 import React from "react";
+import ContactDetails from "../ContactDetails/ContactDetails";
+import ContactForm from "../ContactDetails/ContactForm";
 
 const Contact = () => {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <div className="bg-white">
+        <ContactForm />
+      </div>
+      <div className="bg-white">
+        <ContactDetails />
+      </div>
     </div>
   );
 };
