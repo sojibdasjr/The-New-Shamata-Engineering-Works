@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "LOS GATOS TREEHOUSE",
+      "category": "living room",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/792969d4-3271-4240-8595-484078b9912b/CathieHong_Home_14.jpg?format=1500w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/e69abab7-e1e5-4a28-a280-67ef7d4a066f/CathieHong_Home_23.jpg?format=2500w",
       "image1": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/cbfcc5f4-6108-4b98-aed0-3b08b9accedf/CathieHong_Home_6.jpg?format=500w",
@@ -12,6 +13,7 @@
     },
     {
       "id": 2,
+      "category": "dine in room",
       "title": "AUSTRALIAN MINIMALIST GROUND UP",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/cbeaf500-d159-41d0-9f6c-403301fd2450/CathieHong_Emory_015.JPG?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/e9d3b92a-0bd2-416a-83ba-087f769b40de/CathieHong_Emory_020.JPG?format=1000w",
@@ -22,6 +24,7 @@
     },
     {
       "id": 3,
+      "category": "dine in room",
       "title": "SARATOGA WHIMSY HOUSE",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/d1ac54a1-204c-49b1-8ca4-203327a6154e/Cathie+Hong-Saratoga_4.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/aec233ed-8834-46dd-bd2c-034ae37a7631/Cathie+Hong-Saratoga_21.jpg?format=1000w",
@@ -32,6 +35,7 @@
     },
     {
       "id": 4,
+      "category": "washroom",
       "title": "ALAMEDA BATHROOMS",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/dd293a6f-c686-4f54-b15c-1b093a41e18c/CathieHong_Smith_1.jpg?format=1500w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/3bcd002c-cccd-4a00-9c98-b7c5347b3e1a/CathieHong_Smith_3.jpg?format=2500w",
@@ -42,6 +46,7 @@
     },
     {
       "id": 5,
+      "category": "Kitchen",
       "title": "SAN FRANCISCO EDWARDIAN",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/64aae207-01e2-4c72-bb76-b9fa676b5b9e/Cathie+Hong+Cabrillo_16.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/b30a9a12-126d-4ded-a816-237f0efdabec/Cathie+Hong+Cabrillo_27.jpg?format=1000w",
@@ -52,6 +57,7 @@
     },
     {
       "id": 6,
+      "category": "dine in room",
       "title": "TONAL SINGLE FAMILY HOME",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1108ebfd-99e6-4fba-9d65-fe026c972a22/Cathie+Hong_+Forest_1.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/7530020f-13b1-4d38-95fd-49b316849e3e/Cathie+Hong_+Forest_26.jpg?format=1000w",
@@ -62,6 +68,7 @@
     },
     {
       "id": 7,
+      "category": "living room",
       "title": "MIDCENTURY CARIBBEAN HOME",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/465f9b20-79ce-4728-90a8-4e3134b5f8d8/Cathie+Hong-Husted_3.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/64d31367-c3a3-4a4e-a59e-bd19136970ce/Cathie+Hong-Husted_2.jpg?format=1000w",
@@ -72,6 +79,7 @@
     },
     {
       "id": 8,
+      "category": "living room",
       "title": "CAMPBELL MODERN HOME",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1583096454917-ONZJVYVXQBES6FVTSPYY/Interiors929-3.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1583097095836-ZOT86Y67H9UP80G8H8KF/Interiors929-77.jpg?format=1000w",
@@ -82,6 +90,7 @@
     },
     {
       "id": 9,
+      "category": "kitchen ",
       "title": "EICHLER KITCHEN RENOVATION",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1583100764909-PKGN8JQ8OEDGPR26CLX7/image-asset.jpeg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1583101037500-XQ2YNPUQ6O6R35W0XHV9/Interiorkitchen-2.jpg?format=1000w",
@@ -92,6 +101,7 @@
     },
     {
       "id": 10,
+      "category": "living room",
       "title": "PACIFIC NORTHWEST PRIMARY BEDROOM & NURSERY",
       "banner": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1598414044616-X5WQ7LRNBX8U8AI5Z997/Interior+Edits-19.jpg?format=750w",
       "banner2": "https://images.squarespace-cdn.com/content/v1/5b097b4a4cde7ab1c2125706/1598414629013-R9NCJ8TG9JQCULJV49OT/Interior+Edits-30.jpg?format=1000w",

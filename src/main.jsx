@@ -42,6 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
+        loader: () => fetch("../fakeData.json"),
         element: <ImageGallery />,
       },
       {

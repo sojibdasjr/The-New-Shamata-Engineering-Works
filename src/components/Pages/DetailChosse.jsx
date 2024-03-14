@@ -50,29 +50,41 @@ const DetailChosse = () => {
         </button>
         <div className="md:flex gap-6 mt-2">
           <div data-aos="fade-right" className="md:w-1/4">
-            <div className="p-5 bg-barandBgSky400 bg-opacity-10  ">
+            <div className="p-2 bg-barandBgSky400 bg-opacity-10  ">
               <div className="text-2xl w-60 font-bold ">
                 <h1 className="tracking-widest mb-2">All Services</h1>
               </div>
               <div className=" border-t pt-5 border-gray-300  ">
-                <h1 className="bg-white py-3 mb-2 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  01. Space Planning <FaArrowRightLong />
-                </h1>
-                <h1 className="bg-white py-3 mb-2 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  02. Interior Desing{" "}
-                </h1>
-                <h1 className="bg-white py-3 mb-2 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  03. Space Planning
-                </h1>
-                <h1 className="bg-white py-3 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  04. Space Planning
-                </h1>
-                <h1 className="bg-white py-3 mb-2 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  05. Space Planning
-                </h1>
-                <h1 className="bg-white py-3 mb-2 rounded ps-1 tracking-widest flex gap-4 items-center hover:bg-blue-200 hover:-translate-y-2 duration-300 cursor-pointer">
-                  06. Space Planning
-                </h1>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>01.</h1>
+                  <h2> Space Planning</h2>
+                  <FaArrowRightLong />
+                </div>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>02.</h1>
+                  <h2> Interior Design</h2>
+                  <FaArrowRightLong />
+                </div>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>03.</h1>
+                  <h2> Remodeling Services</h2>
+                  <FaArrowRightLong />
+                </div>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>04.</h1>
+                  <h2> Urban Planning</h2>
+                  <FaArrowRightLong />
+                </div>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>05.</h1>
+                  <h2> Kitchen Cabinet</h2>
+                  <FaArrowRightLong />
+                </div>
+                <div className=" bg-white py-3 mb-2 rounded px-1 tracking-widest flex justify-between gap-4 items-center hover:bg-blue-200 hover:scale-110 duration-300 cursor-pointer">
+                  <h1>06.</h1>
+                  <h2> 3d Visualization </h2>
+                  <FaArrowRightLong />
+                </div>
               </div>
             </div>
 
@@ -142,17 +154,16 @@ const DetailChosse = () => {
                 <h1 className="text-gray-500 text-[14px]">{description}</h1>
                 <img className="md:w-60 rounded-lg" src={image4} alt="" />
               </div>
-              <div className="flex items-center gap-5 mt-5 ">
+              <div className="md:flex items-center gap-5 mt-5 ">
                 <iframe
-                  width="560"
-                  height="315"
+                  className="md:w-[560px] md:h-[315px] w-full h-[215px]"
                   src="https://www.youtube.com/embed/uwYUXMcfA7c?si=ebV6bEp-Bih2kIh5"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
-                <h1 className="text-gray-500 text-[14px] w-1/4">
+                <h1 className="text-gray-500 text-[14px] md:w-1/4 ">
                   {description.slice(0, 300)}
                 </h1>
               </div>
