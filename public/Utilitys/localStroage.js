@@ -15,4 +15,10 @@ const saveDesingToLC = (id) => {
   }
 };
 
-export { getDesignFromLS, saveDesingToLC };
+const removeFromLS = (id) => {
+  const strodDesign = getDesignFromLS();
+  const remaining = strodDesign.filter((idx) => idx != id);
+  localStorage.setItem("desing", JSON.stringify(remaining));
+};
+
+export { getDesignFromLS, saveDesingToLC, removeFromLS };

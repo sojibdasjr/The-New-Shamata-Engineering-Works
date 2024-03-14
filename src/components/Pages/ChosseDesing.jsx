@@ -17,7 +17,7 @@ const ChosseDesing = () => {
       );
       setDisplayDesing(likeDesing);
     }
-  }, []);
+  }, [displayDesing]);
 
   return (
     <div className="bg-white">
