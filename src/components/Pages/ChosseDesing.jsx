@@ -18,6 +18,7 @@ const ChosseDesing = () => {
       setDisplayDesing(likeDesing);
     }
   }, []);
+
   return (
     <div className="bg-white">
       <div className="lg:max-w-7xl lg:mx-auto mx-4  pt-[66px] ">
