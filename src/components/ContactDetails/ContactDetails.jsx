@@ -23,15 +23,13 @@ const ContactDetails = () => {
           className="grid md:grid-cols-2 gap-4"
         >
           <div className="text-black bg-slate-100 text-center">
-            <h1 className="uppercase text-2xl font-bold mt-5 mb-2 ">
-              Contact us
+            <h1 className="flex justify-center mt-5">
+              <MdAddIcCall className="text-6xl text-textColorSky500 border-2 border-black rounded-full p-1" />
             </h1>
-            <p>We are here to provide design consulting</p>
-            <div className="flex items-center gap-4 justify-center mt-5">
-              <FaFacebookF />
-              <FaSquareXTwitter />
-              <FaInstagram />
-              <IoLogoYoutube />
+            <p className="uppercase text-2xl font-bold mt-2">call us</p>
+            <div className="items-center gap-4 justify-center mt-5">
+              <h1>+8801628078487</h1>
+              <h1>+8801928078487</h1>
             </div>
           </div>
           <div className="text-black bg-slate-100 text-center">
@@ -56,14 +54,17 @@ const ContactDetails = () => {
               <p className="lowercase text-end me-10">Bangladesh</p>
             </div>
           </div>
+
           <div className="text-black bg-slate-100 text-center">
-            <h1 className="flex justify-center mt-5">
-              <MdAddIcCall className="text-6xl text-textColorSky500 border-2 border-black rounded-full p-1" />
+            <h1 className="uppercase text-2xl font-bold mt-5 mb-2 ">
+              Contact us
             </h1>
-            <p className="uppercase text-2xl font-bold mt-2">call us</p>
-            <div className="items-center gap-4 justify-center mt-5">
-              <h1>+8801628078487</h1>
-              <h1>+8801928078487</h1>
+            <p>We are here to provide design consulting</p>
+            <div className="flex items-center gap-4 justify-center mt-5">
+              <FaFacebookF />
+              <FaSquareXTwitter />
+              <FaInstagram />
+              <IoLogoYoutube />
             </div>
           </div>
         </div>
