@@ -13,7 +13,7 @@ const ErrorPage = () => {
           </h1>
           <p className="tracking-widest text-start ">
             You must have picked the wrong door because I haven't been able to
-            lay my eye on the page you've been searching for.....
+            lay my eye on the page you've been searching for......
           </p>
           <div className="mt-10">
             <Link to="/" className="bg-barandBgSky400 py-2 px-5 uppercase ">
