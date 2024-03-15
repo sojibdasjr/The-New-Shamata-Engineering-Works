@@ -1,13 +1,30 @@
 import React from "react";
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import lgZoom from "lightgallery/plugins/zoom";
+import { Link } from "react-router-dom";
 
 const GalleryItem = ({ items }) => {
   const { image1, image2, image4 } = items;
   return (
     <>
-      <img data-aos="zoom-out-up" src={image1} alt="" />
-      <img data-aos="zoom-in-right" src={image2} alt="" />
-
-      <img data-aos="zoom-in-down" src={image4} alt="" />
+      <LightGallery data-aos="fade-up" speed={500} plugins={[lgZoom]}>
+        <Link to={image1}>
+          <img alt="" src={image1} />
+        </Link>
+      </LightGallery>
+      <LightGallery data-aos="fade-up" speed={500} plugins={[lgZoom]}>
+        <Link to={image2}>
+          <img alt="" src={image2} />
+        </Link>
+      </LightGallery>
+      <LightGallery data-aos="fade-up" speed={500} plugins={[lgZoom]}>
+        <Link to={image4}>
+          <img alt="" src={image4} />
+        </Link>
+      </LightGallery>
     </>
   );
 };
