@@ -45,7 +45,7 @@ const DetailChosse = () => {
           }}
         >
           <h1 className="flex items-center gap-3 text-red-400 border px-5 py-2 rounded">
-            GO BACK <MdOutlineSubdirectoryArrowLeft className="text-2xl" />
+            BACK <MdOutlineSubdirectoryArrowLeft className="text-2xl" />
           </h1>
         </button>
         <div className="md:flex gap-6 mt-2">
@@ -98,6 +98,13 @@ const DetailChosse = () => {
                   </h1>
                 </div>
                 <div className=" border-t pt-5 border-gray-300  ">
+                  <input
+                    required
+                    type="text"
+                    readOnly
+                    placeholder={title}
+                    className="input mb-2  w-full max-w-xs bg-white"
+                  />
                   <input
                     required
                     type="text"
