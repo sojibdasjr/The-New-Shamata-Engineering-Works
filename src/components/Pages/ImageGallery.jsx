@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import GalleryItem from "../GalleryItem/GalleryItem";
+import { CiMenuFries } from "react-icons/ci";
 
 const ImageGallery = () => {
   const allData = useLoaderData();
@@ -10,26 +11,42 @@ const ImageGallery = () => {
   return (
     <div className="bg-white">
       <div className="lg:max-w-7xl lg:mx-auto mx-4  pt-[66px]">
-        <div>
-          {/* category div */}
-          <div className=" flex  justify-start mb-2  ">
-            <button
-              onClick={() => setSelectedCategory("")}
-              className="bg-barandBgSky400  py-3 px-5 my-2 shadow-lg hover:scale-110 duration-300 hover:bg-green-200 rounded-md text-black me-2 "
-            >
-              Show ALL
-            </button>
+        <div className="dropdown">
+          <div
+            tabIndex={0}
+            role="button"
+            className=" flex items-center gap-2 border border-barandBgSky400 text-black  py-1 px-5 "
+          >
+            <CiMenuFries className="text-1xl " /> Choose Category
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow border-2 m-3 backdrop-blur-lg w-52"
+          >
+            <li>
+              <button
+                onClick={() => setSelectedCategory("")}
+                className="   py-3 px-5 my-2 shadow-lg hover:scale-110 duration-300 border-y-2 hover:bg-sky-100 hover:bg-opacity-25 rounded-md text-black hover:text-sky-500 hover:tracking-widest   "
+              >
+                Show ALL
+              </button>
+            </li>
             {category.map((item, idx) => (
-              <div key={idx} className=" px-2 ">
+              <li key={idx}>
                 <button
                   onClick={() => setSelectedCategory(item)}
-                  className="bg-barandBgSky400 py-3 px-5 my-2 rounded-md text-black  shadow-lg hover:scale-110 duration-300 hover:bg-green-200  "
+                  className="border-y-2 hover:bg-sky-100 hover:bg-opacity-25 rounded-md text-black py-3 px-5 my-2    shadow-lg hover:scale-110 duration-300 hover:text-sky-500 hover:tracking-widest   "
                 >
                   {item}
                 </button>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+
+        <div>
+          {/* category div */}
+          <div className=" flex  justify-start mb-2  "></div>
           {/* renderdiv */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
             {selectedCategory === ""

@@ -12,11 +12,13 @@ import Portfolio from "./components/Pages/Portfolio.jsx";
 import PortfolioDetails from "./components/Pages/PortfolioDetails.jsx";
 import ChosseDesing from "./components/Pages/ChosseDesing.jsx";
 import DetailChosse from "./components/Pages/DetailChosse.jsx";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
