@@ -8,7 +8,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import GoToUp from "./components/GotoUp/GoToUp";
-import Messenger from "./components/Messenger/Messenger";
 
 function App() {
   useEffect(() => {
