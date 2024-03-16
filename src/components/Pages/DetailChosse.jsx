@@ -182,14 +182,14 @@ const DetailChosse = () => {
 
                   <ReCAPTCHA
                     className="my-2"
-                    sitekey="6LfGjJopAAAAAHPvJSlXEai3yB1hVU_F7_WBxWis"
+                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                     onChange={onChange}
                   />
 
                   <button
                     disabled={!verified}
                     type="submit"
-                    className="btn btn-outline btn-success"
+                    className="btn btn-outline  btn-success"
                   >
                     Send
                   </button>
