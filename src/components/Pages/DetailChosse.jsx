@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
 
 const DetailChosse = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
   const loaderData = useLoaderData();
   const loadAllData = loaderData.items;
   const { id } = useParams();
@@ -12,6 +18,26 @@ const DetailChosse = () => {
   const newItem = loadAllData.find((item) => item.id === newId);
   const { title, banner, image1, image2, image4, description } = newItem;
   const navigate = useNavigate();
+
+  // emailjs function
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_q795ngj", "template_wdnqzvw", form.current, {
+        publicKey: "zTuADbFp-D-Q9zoat",
+      })
+      .then(
+        () => {
+          toast.success("💚 Send Successfully", {});
+          setLoading(true);
+        },
+        (error) => {
+          toast.error(" 🥵 Failed ", {});
+        }
+      );
+  };
 
   return (
     <div className="bg-white text-black pt-[56px] ">
@@ -90,52 +116,81 @@ const DetailChosse = () => {
 
             {/* contact page */}
             <div className="p-5 bg-barandBgSky400 bg-opacity-10 mt-10   ">
-              <form>
-                <div className=" w-60 ">
-                  <h1 className="tracking-widest text-[14px] mb-2">Contact</h1>
-                  <h1 className="tracking-wide mb-2 font-semibold">
-                    Let's start new project.
-                  </h1>
+              <div className=" w-60 ">
+                <h1 className="tracking-widest text-[14px] mb-2">Contact</h1>
+                <h1 className="tracking-wide mb-2 font-semibold">
+                  Let's start new project.
+                </h1>
+              </div>
+              {loading === true ? (
+                <div className="flex text-green-500 gap-2 items-center">
+                  <h1>We will contact you soon.</h1>
+                  <span className="loading loading-dots loading-md"></span>
                 </div>
-                <div className=" border-t pt-5 border-gray-300  ">
+              ) : (
+                <form ref={form} onSubmit={sendEmail}>
                   <input
                     required
+                    name="title"
                     type="text"
-                    readOnly
-                    placeholder={title}
-                    className="input mb-2  w-full max-w-xs bg-white"
+                    placeholder="Title Please"
+                    className="input mb-2 input-bordered input-accent w-full max-w-xs bg-white "
                   />
                   <input
                     required
                     type="text"
+                    name="user_name"
                     placeholder="Your Name"
                     className="input mb-2 input-bordered input-accent w-full max-w-xs bg-white"
                   />
                   <input
+                    required
+                    type="number"
+                    name="user_phone"
+                    placeholder="+88 01********"
+                    className="input mb-2 input-bordered input-accent w-full max-w-xs bg-white"
+                  />
+                  <input
                     type="email"
+                    name="user_email"
                     required
                     placeholder="Email"
                     className="input input-bordered input-accent w-full max-w-xs bg-white"
                   />
+
                   <textarea
+                    name="message"
                     className="textarea textarea-success w-full h-40 bg-white mt-2"
                     placeholder="Message"
                   ></textarea>
-                </div>
-                <button
-                  className="py-3  bg-barandBgSky400 w-full hover:scale-110 duration-300 "
-                  type="submit"
-                >
-                  Start Project
-                </button>
-              </form>
+
+                  <input
+                    className="py-3 cursor-pointer  bg-barandBgSky400 w-full hover:scale-110 duration-300 "
+                    type="submit"
+                    value="Send"
+                  />
+                </form>
+              )}
             </div>
           </div>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition:Bounce
+          />
 
           <div className="md:w-3/4">
             <img className="w-full" src={banner} alt="" />
             <h1 className="text-4xl my-5 font-semibold tracking-widest">
-              {title}
+              Title: {title}
             </h1>
             <h1 className="text-gray-500 text-[14px]">{description}</h1>
 

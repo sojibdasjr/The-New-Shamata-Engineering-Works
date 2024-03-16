@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { BiLike } from "react-icons/bi";
 import { AiFillLike } from "react-icons/ai";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactCompareImage from "react-compare-image";
