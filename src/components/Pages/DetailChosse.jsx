@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -10,6 +11,7 @@ import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
 const DetailChosse = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
+  const [verified, setVerified] = useState(false);
 
   const loaderData = useLoaderData();
   const loadAllData = loaderData.items;
@@ -19,8 +21,14 @@ const DetailChosse = () => {
   const { title, banner, image1, image2, image4, description } = newItem;
   const navigate = useNavigate();
 
-  // emailjs function
+  //recaptcha function
 
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
+
+  // emailjs function
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -164,11 +172,27 @@ const DetailChosse = () => {
                     placeholder="Message"
                   ></textarea>
 
-                  <input
-                    className="py-3 cursor-pointer  bg-barandBgSky400 w-full hover:scale-110 duration-300 "
+                  {/* <button
+                    disabled
+                    className="py-3 cursor-pointer   bg-barandBgSky400 w-full hover:scale-110 duration-300 "
                     type="submit"
-                    value="Send"
+                  >
+                    Send
+                  </button> */}
+
+                  <ReCAPTCHA
+                    className="my-2"
+                    sitekey="6LfGjJopAAAAAHPvJSlXEai3yB1hVU_F7_WBxWis"
+                    onChange={onChange}
                   />
+
+                  <button
+                    disabled={!verified}
+                    type="submit"
+                    className="btn btn-outline btn-success"
+                  >
+                    Send
+                  </button>
                 </form>
               )}
             </div>
