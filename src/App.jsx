@@ -22,7 +22,6 @@ function App() {
       <FirstNavbar />
       <SecondaryNavbar />
       <Navbar />
-      <Messenger />
       <Outlet />
       <GoToUp />
       <div className="bg-sky-200">
