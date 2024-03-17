@@ -21,7 +21,7 @@ const ChosseDesing = () => {
 
   return (
     <div className="bg-white">
-      <div className="lg:max-w-7xl lg:mx-auto mx-4  pt-[66px] ">
+      <div className="lg:max-w-7xl lg:mx-auto mx-4  min-h-screen  pt-[66px] ">
         <div className="flex justify-between">
           <Link to="/portfolio" className="me-2">
             <h1 className="flex items-center gap-3 text-red-400 border px-5 py-2 rounded">
